@@ -26,8 +26,18 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+.burger {
+  height: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 35px;
+  color: #293241;
+}
+
 .navbar h1 {
-  color: #ffffff;
+  color: white;
+  flex: 1;
 }
 
 .navbar a {
@@ -73,7 +83,9 @@ header {
 
 #contact-form .submit {
   margin-top: 1rem;
-  width: 30%;
+  width: 35%;
+  height: 2.5rem;
+  font-size: 1.1rem;
   background-color: #ee6c4d;
   color: white;
 }
@@ -82,4 +94,16 @@ header {
   display: flex;
   justify-content: flex-end;
   margin: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  #contact-form {
+    width: 100%;
+  }
 }
