@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Professor Queiroz</title>
+    <meta
+      name="description"
+      content="This is an example of a meta description."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <!-- Include email forwarder -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript" src="/assets/js/email.js"></script>
+    <!-- Include jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/cleave.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/addons/cleave-phone.br.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Professor Queiroz</h1>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <form id="contact-form">
+      <input type="hidden" name="contact_number" />
+      <label>Nome</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Número de celular</label>
+      <input class="phone" type="tel" name="phone" />
+      <input type="submit" value="Send" />
+    </form>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+  </body>
+</html>
