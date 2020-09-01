@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
   background: #e0fbfc;
 }
@@ -72,13 +72,22 @@ header {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-#contact-form label {
-  padding: 0;
+#contact-form div {
+  width: 2rem;
+  position: relative;
+  top: -28px;
+  left: 5px;
+  text-align: center;
+  color: #3d5a80;
 }
 #contact-form input {
   border: none;
   border-radius: 5px;
-  height: 2rem;
+  height: 2.5rem;
+  padding: 2px 0 0 35px;
+}
+#contact-form input::placeholder {
+  color: #3d5a80;
 }
 
 #contact-form .submit {
